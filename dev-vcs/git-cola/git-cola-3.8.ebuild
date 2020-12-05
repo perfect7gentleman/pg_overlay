@@ -90,7 +90,7 @@ python_install_all() {
 		prefix="${EPREFIX}/usr" \
 		install
 
-	python_fix_shebang "${ED}/usr/share/git-cola/bin/git-xbase" "${ED}"/usr/bin/git-cola
+	python_fix_shebang "${ED}/usr/bin/git-cola-sequence-editor" "${ED}"/usr/bin/git-cola
 	python_optimize "${ED}/usr/share/git-cola/lib/cola"
 
 	use doc || HTML_DOCS=( "${FILESDIR}"/index.html )
